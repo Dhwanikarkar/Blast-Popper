@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.new2.Retryscreen"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:fontFamily="@font/misterbrown"
+        android:text="@string/score"
+        android:textColor="@color/textcolor"
+        android:textSize="150sp" />
+
+    <TextView
+        android:id="@+id/newbest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/score"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-60dp"
+        android:layout_marginBottom="354dp"
+        android:fontFamily="@font/misterbrown"
+        android:text="@string/new_best"
+        android:textColor="@color/textcolor"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/retry"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignStart="@+id/score"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="201dp"
+        android:onClick="playscreen"
+        app:srcCompat="@mipmap/retry_4" />
+
+    <TextView
+        android:id="@+id/hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="51dp"
+        android:fontFamily="@font/misterbrown"
+        android:text="0"
+        android:textColor="@color/textcolor"
+        android:textSize="70sp" />
+
+</RelativeLayout>
